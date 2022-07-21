@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Dedicated SystemC directories
+systemc-2.3.3
+systemc-2.3.3-built

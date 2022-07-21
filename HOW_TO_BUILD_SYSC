@@ -1,0 +1,14 @@
+* Download systemC source code v2.3.3
+https://accellera.org/images/downloads/standards/systemc/systemc-2.3.3.tar.gz
+
+* Compile and generate systemC libraries
+$> cmake -B build -DCMAKE_INSTALL_PREFIX=<xxx>/built
+$> cd build
+$> make
+$> make install
+
+* Use script
+$> gen_sysc.sh
+
+Install path: systemc-2.3.3-built
+

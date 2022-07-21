@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 3.12)
 project(sc_first VERSION 1.0.0 LANGUAGES C CXX)
 
 set (CMAKE_CXX_STANDARD 14 CACHE STRING
@@ -11,6 +12,5 @@ file(GLOB_RECURSE ALL_SRC
 
 include_directories(systemc-2.3.3-built/include)
 link_directories(${SYSC_LIB_DIR})
-message("${ALL_SRC}")
 add_executable(${PROJECT_NAME} ${ALL_SRC})
 target_link_libraries(${PROJECT_NAME} systemc)
